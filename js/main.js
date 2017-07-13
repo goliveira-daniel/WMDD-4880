@@ -12,5 +12,9 @@ var feed = new Instafeed({
 });
 
 window.onload = function() {
-	feed.run();
+	$("button").on("click",function() {
+		let txt = document.getElementById("rule")
+		feed.options.userId = parseInt(txt.value)
+		feed.run();
+	})
 }
