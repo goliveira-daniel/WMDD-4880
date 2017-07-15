@@ -17,4 +17,8 @@ window.onload = function() {
 		feed.options.userId = parseInt(txt.value)
 		feed.run();
 	})
+
+	feed.options.target = 'participants';
+	feed.options.template = "<div id='box'><div id='picture'><img src='{{image}}'><span id='center-heart' class='icon-heart'></span></div><div id='infos'><span id='icon-instagram' class='icon-instagram'></span><div id='user'>{{model.user.username}}</div><div id='bottom-heart' class='icon-heart unclicked'></div></div></div>";
+	feed.run();
 }
