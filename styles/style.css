@@ -74,9 +74,9 @@ body {
 	color: white;
 }
 
-#picture:hover #center-heart {
+/* #picture:hover #center-heart {
 	opacity: 1;
-}
+} */
 
 #infos {
 	background-color: rgba(0, 0, 0, 0.5);
